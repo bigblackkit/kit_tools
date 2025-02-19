@@ -1,0 +1,13 @@
+#ssh config for multiple keys (dir: ~/.ssh)
+
+Host server1
+     Hostname 192.168.0.5
+     User user
+     Port 22
+     IdentityFile ~/.ssh/your_key
+
+Host server2
+     Hostname 192.168.0.4
+     User user
+     Port 22
+     IdentityFile ~/.ssh/your_key
