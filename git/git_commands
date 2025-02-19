@@ -33,5 +33,26 @@ git push
 # Обновить с Github
 git pull
 
+# restore commit version
+git chekout commit_hesh
+#example
+git chekout 4ea9309bafb8ed3bc48c03db44e76377e55849b0
+
+# вереуться в мастер после перехода в коммит
+git chekout master
+
+#Изменить коммит
+git commit --amend
+
+#Удалить коммит
+git reset --hard HEAD~1
+# где HEAD~1 означает спуститься на 1 позицию ниже в коммитах
+
+# Убрать из лога комиты и остаться на последней версии
+git reset --soft HEAD~3
+#Где HEAD~3 это например сколько коммитовот последнего до последнего включая первый и последний
+# т.е. например нажно остаться на новейшем из 3х
+
+
 
  
