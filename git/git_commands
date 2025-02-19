@@ -10,6 +10,18 @@ git remote -v
 
 git log
 
+git log --pretty=oneline
+
+#показать теги
+git tag
+
+#СОздать тег в текущем коммите
+git tag nametag
+
+#Послеть тег
+git push origin yourtag
+
+# show branch
 git branch
 
 # add branch
