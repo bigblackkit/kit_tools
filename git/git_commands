@@ -7,3 +7,31 @@ git commit -m "First commit Message"
 git remote add origin "GitHub-repository-URL"
 
 git remote -v
+
+git log
+
+git branch
+
+# add branch
+git branch namebranch
+
+# switch branch
+git chekout namebranch
+
+# Delete branch
+git branch -d namebranch
+
+# add branch & swich
+git chekout -b name branch
+
+# merge
+git merge namebranch
+
+# Залить
+git push
+
+# Обновить с Github
+git pull
+
+
+ 
