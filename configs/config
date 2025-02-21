@@ -11,3 +11,8 @@ Host server2
      User user
      Port 22
      IdentityFile ~/.ssh/your_key
+Host github.com
+     HostName github.com
+     User git
+     IdentityFile ~/.ssh/your_key
+     IdentitiesOnly yes

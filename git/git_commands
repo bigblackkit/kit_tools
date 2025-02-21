@@ -18,8 +18,22 @@ git tag
 #СОздать тег в текущем коммите
 git tag nametag
 
-#Послеть тег
+#Присвоить тег коммиту
+git tag -a nametag heshcommit
+
+#Послать тег
 git push origin yourtag
+
+#Запушить все теги
+git push origin --tags
+
+# Удалить таг удалённо
+
+git push origin -- delete nametag
+
+#Перейти в версию по тегу
+
+git checkout nametag
 
 # show branch
 git branch
@@ -69,6 +83,13 @@ git reset --soft HEAD~3
 
 git push origin --delete namebranch
 
+#ЗАлить отдельно ветку
 
+git push origin namebranch
 
+#Очистить истоию от чувствительной инфы
+#Удаляем коммит с чувст инф 
+git reset --hard HEAD~1 
+#Запушиваем изменения в хаб
+git push origin master --force
  
