@@ -1,0 +1,36 @@
+#Download image
+docker pull nameimage
+
+#Show images
+docker images
+
+# show runing containers
+docker ps
+
+#show all containers(whith disabled)
+docker ps -a
+
+#Запустить (сам скачает) контейнер интерактивно (будемм видеть как он бежит,и пока не завершим его консоль не получим)
+#перенаправление портов , вебсервер томкат взят для примера, Ctrl+C - завершить
+docker run -it -p 1234:8080 tomcat
+
+# Запуск в фоне, перенапровление портов
+docker run -d -p 1237:80 nginx 
+
+# Поиск в докерхабе имеджа с таким названием
+docker search nginx
+
+#Удалить контейнер
+docker rm idcontainer
+
+#Удалить образ
+docker rmi imageid
+
+#Create image from docker file (имяфайла:тег) ( . ) -  локально
+docker build -t nameimage:tag .
+
+#зайти в консоль контейнера
+docker exec -it containerID /bin/bash
+
+#Create image from container
+docker commit contaiterid nameimage:tag 
