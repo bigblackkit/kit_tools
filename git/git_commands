@@ -6,6 +6,9 @@ git commit -m "First commit Message"
 
 git remote add origin "GitHub-repository-URL"
 
+#Заменить установленное git remote add
+git remote set-url origin 
+
 git remote -v
 
 git log

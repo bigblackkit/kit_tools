@@ -1,0 +1,3 @@
+sudo nano /lib/systemd/system/jenkins.service
+
+Environment="JENKINS_PORT=8081"

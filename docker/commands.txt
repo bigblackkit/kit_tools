@@ -34,3 +34,6 @@ docker exec -it containerID /bin/bash
 
 #Create image from container
 docker commit contaiterid nameimage:tag 
+
+#--------------------------
+sudo usermod -aG docker $USER
